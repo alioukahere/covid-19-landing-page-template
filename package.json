@@ -1,0 +1,25 @@
+{
+  "name": "covid-19-landing-page-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "postcss assets/scss/app.scss -o public/build/app.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alioukahere/covid-19-landing-page-template.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alioukahere/covid-19-landing-page-template/issues"
+  },
+  "homepage": "https://github.com/alioukahere/covid-19-landing-page-template#readme",
+  "dependencies": {
+    "autoprefixer": "^9.7.5",
+    "postcss-cli": "^7.1.0",
+    "tailwindcss": "^1.2.0"
+  }
+}
