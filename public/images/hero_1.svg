@@ -465,11 +465,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.7"
-     inkscape:cx="-126.61404"
-     inkscape:cy="126.69966"
+     inkscape:zoom="3.959798"
+     inkscape:cx="305.31658"
+     inkscape:cy="82.442151"
      inkscape:document-units="px"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="g6175"
      showgrid="false"
      inkscape:window-width="1920"
      inkscape:window-height="1025"
@@ -1446,11 +1446,12 @@
          id="g6175">
         <g
            transform="translate(388.8682,96.4795)"
-           id="g6181">
+           id="g6181"
+           style="fill:#c87137;fill-opacity:1">
           <path
              inkscape:connector-curvature="0"
              id="path6183"
-             style="fill:#db876c;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             style="fill:#c87137;fill-opacity:1;fill-rule:nonzero;stroke:none"
              d="m 0,0 c 0,0 -20.826,-5.777 -23.603,-4.223 -2.777,1.556 -6.332,3.445 -11.415,4.778 -5.082,1.333 -12.831,1.5 -16.664,2.333 -3.832,0.833 -7.665,-1.025 -4.832,-3.72 2.833,-2.696 11.915,-3.862 11.915,-5.195 0,-1.333 -27.079,-8.249 -26.996,-11.332 0.083,-3.082 18.58,1.25 19.163,0.667 0.584,-0.583 -21.579,-6.082 -20.496,-9.082 1.083,-2.999 22.08,2.916 22.496,2.416 0.417,-0.499 -16.914,-6.249 -16.497,-8.831 0.417,-2.583 19.247,3.082 19.663,2.666 0.417,-0.417 -13.664,-4.166 -12.414,-6.916 1.249,-2.749 22.913,4.416 27.162,5.333 4.249,0.916 10.915,3.666 12.914,6.249 2,2.583 25.219,5.203 25.219,5.203 0,0 1.487,14.286 -5.615,19.654" />
         </g>
         <g
