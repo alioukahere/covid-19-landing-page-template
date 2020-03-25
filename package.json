@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "postcss assets/scss/app.scss -o public/build/app.css"
+    "build": "postcss assets/scss/app.css -o public/build/app.css"
   },
   "repository": {
     "type": "git",
