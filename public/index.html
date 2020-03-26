@@ -50,14 +50,14 @@
         </ul>
 
         <ul class="md:flex hidden md:block">
-          <li class="">
+          <!-- <li class="">
             <a
               href="#"
               class="inline-block text-center bg-yellow-700 px-4 py-3 text-gray-100 uppercase rounded-lg font-semibold text-sm tracking-wider shadow-xl hover:bg-yellow-600"
             >
               Faire un test
             </a>
-          </li>
+          </li> -->
           <li class="md:ml-6">
             <a
               href="#"
@@ -72,14 +72,16 @@
 
     <!-- Hero section -->
     <section class="py-16">
-      <div class="container flex items-center">
-        <div class="w-2/5 pr-10">
+      <div class="container flex items-center flex-wrap">
+        <div class="sm:w-full md:w-1/2 lg:w-2/5 pr-5">
           <h2
-            class="text-3xl uppercase font-bold text-yellow-700 tracking-wider leading-snug"
+            class="text-3xl md:text-2xl lg:text-3xl uppercase font-bold text-yellow-700 tracking-wider leading-snug"
           >
             #restezalamaison
           </h2>
-          <h1 class="text-3xl font-bold text-gray-900 mt-4 leading-snug">
+          <h1
+            class="text-3xl md:text-2xl lg:text-3xl font-bold text-gray-900 mt-4 leading-snug"
+          >
             Tous ensemble, protégeons-nous contre le
             <span class="uppercase text-red-600">coronavirus</span>.
           </h1>
@@ -109,7 +111,7 @@
             </div>
           </form>
         </div>
-        <div class="w-3/5">
+        <div class="sm:w-full md:w-1/2 lg:w-3/5 hidden md:block">
           <img
             src="/images/hero_1.svg"
             alt="Stay at home"
@@ -120,84 +122,88 @@
     </section>
 
     <!-- Stats section -->
-    <section class="py-16">
+    <section class="pb-10">
       <div class="container flex flex-wrap items-center">
-        <div class="w-full md:w-1/2 bg-white rounded-lg shadow-xl p-8 mx-2">
-          <h2 class="text-2xl font-bold uppercase tracking-wide">Guinée</h2>
-          <div class="flex mt-8">
-            <div class="px-1 w-0/12">
-              <div class="h-6 bg-red-600 rounded"></div>
+        <div class="w-full md:w-1/2 md:p-5 md:-ml-5">
+          <div class="bg-white rounded-lg shadow-xl p-8">
+            <h2 class="text-xl font-bold uppercase tracking-wide">Guinée</h2>
+            <div class="flex mt-8">
+              <div class="px-1 w-0/12">
+                <div class="h-5 bg-red-600 rounded"></div>
+              </div>
+              <div class="px-1 w-10/12">
+                <div class="h-5 bg-yellow-400 rounded"></div>
+              </div>
+              <div class="px-1 w-2/12">
+                <div class="h-5 bg-green-800 rounded"></div>
+              </div>
             </div>
-            <div class="px-1 w-10/12">
-              <div class="h-6 bg-yellow-400 rounded"></div>
+            <div class="flex items-center justify-between mt-8 px-2">
+              <div class="flex items-center">
+                <div class="w-5 h-5 bg-red-600 mr-5 rounded"></div>
+                <span class="font-bold text-gray-800">Morts</span>
+              </div>
+              <span class="text-gray-600">0</span>
             </div>
-            <div class="px-1 w-2/12">
-              <div class="h-6 bg-green-800 rounded"></div>
+            <div class="flex items-center justify-between mt-4 px-2">
+              <div class="flex items-center">
+                <div class="w-5 h-5 bg-yellow-400 mr-5 rounded"></div>
+                <span class="font-bold text-gray-800">Actifs</span>
+              </div>
+              <span class="text-gray-600">4</span>
             </div>
-          </div>
-          <div class="flex items-center justify-between mt-8 px-2">
-            <div class="flex items-center">
-              <div class="w-5 h-5 bg-red-600 mr-5 rounded"></div>
-              <span class="font-bold text-gray-800 text-lg">Morts</span>
+            <div class="flex items-center justify-between mt-4 px-2">
+              <div class="flex items-center">
+                <div class="w-5 h-5 bg-green-800 mr-5 rounded"></div>
+                <span class="font-bold text-gray-800">Rétablis</span>
+              </div>
+              <span class="text-gray-600">0</span>
             </div>
-            <span class="text-gray-600 text-lg">0</span>
-          </div>
-          <div class="flex items-center justify-between mt-4 px-2">
-            <div class="flex items-center">
-              <div class="w-5 h-5 bg-yellow-400 mr-5 rounded"></div>
-              <span class="font-bold text-gray-800 text-lg">Actifs</span>
+            <div class="text-right mt-5 text-blue-600">
+              <a href="#" class="underline">Plus de détails ></a>
             </div>
-            <span class="text-gray-600 text-lg">4</span>
-          </div>
-          <div class="flex items-center justify-between mt-4 px-2">
-            <div class="flex items-center">
-              <div class="w-5 h-5 bg-green-800 mr-5 rounded"></div>
-              <span class="font-bold text-gray-800 text-lg">Rétablis</span>
-            </div>
-            <span class="text-gray-600 text-lg">0</span>
-          </div>
-          <div class="text-right mt-5 text-blue-600">
-            <a href="#" class="underline">Plus de détails ></a>
           </div>
         </div>
-        <div
-          class="w-full md:w-1/2 bg-white rounded-lg shadow-xl p-8 mx-2 mt-8"
-        >
-          <h2 class="text-2xl font-bold uppercase tracking-wide">Worldwide</h2>
-          <div class="flex mt-8">
-            <div class="px-1 w-3/12">
-              <div class="h-6 bg-red-600 rounded"></div>
+        <div class="w-full mt-8 md:mt-0 md:w-1/2 md:p-5 md:-mr-5">
+          <div class="bg-white rounded-lg shadow-xl p-8">
+            <h2 class="text-xl font-bold uppercase tracking-wide">
+              Worldwide
+            </h2>
+            <div class="flex mt-8">
+              <div class="px-1 w-3/12">
+                <div class="h-5 bg-red-600 rounded"></div>
+              </div>
+              <div class="px-1 w-7/12">
+                <div class="h-5 bg-yellow-400 rounded"></div>
+              </div>
+              <div class="px-1 w-2/12">
+                <div class="h-5 bg-green-800 rounded"></div>
+              </div>
             </div>
-            <div class="px-1 w-7/12">
-              <div class="h-6 bg-yellow-400 rounded"></div>
+            <div class="flex items-center justify-between mt-8 px-2">
+              <div class="flex items-center">
+                <div class="w-5 h-5 bg-red-600 mr-5 rounded"></div>
+                <span class="font-bold text-gray-800">Morts</span>
+              </div>
+              <span class="text-gray-600">10 000</span>
             </div>
-            <div class="px-1 w-2/12">
-              <div class="h-6 bg-green-800 rounded"></div>
+            <div class="flex items-center justify-between mt-4 px-2">
+              <div class="flex items-center">
+                <div class="w-5 h-5 bg-yellow-400 mr-5 rounded"></div>
+                <span class="font-bold text-gray-800">Actifs</span>
+              </div>
+              <span class="text-gray-600">200 000</span>
             </div>
-          </div>
-          <div class="flex items-center justify-between mt-8 px-2">
-            <div class="flex items-center">
-              <div class="w-5 h-5 bg-red-600 mr-5 rounded"></div>
-              <span class="font-bold text-gray-800 text-lg">Morts</span>
+            <div class="flex items-center justify-between mt-4 px-2">
+              <div class="flex items-center">
+                <div class="w-5 h-5 bg-green-800 mr-5 rounded"></div>
+                <span class="font-bold text-gray-800">Rétablis</span>
+              </div>
+              <span class="text-gray-600">500</span>
             </div>
-            <span class="text-gray-600 text-lg">10 000</span>
-          </div>
-          <div class="flex items-center justify-between mt-4 px-2">
-            <div class="flex items-center">
-              <div class="w-5 h-5 bg-yellow-400 mr-5 rounded"></div>
-              <span class="font-bold text-gray-800 text-lg">Actifs</span>
+            <div class="text-right mt-5 text-blue-600">
+              <a href="#" class="underline">Plus de détails ></a>
             </div>
-            <span class="text-gray-600 text-lg">200 000</span>
-          </div>
-          <div class="flex items-center justify-between mt-4 px-2">
-            <div class="flex items-center">
-              <div class="w-5 h-5 bg-green-800 mr-5 rounded"></div>
-              <span class="font-bold text-gray-800 text-lg">Rétablis</span>
-            </div>
-            <span class="text-gray-600 text-lg">500</span>
-          </div>
-          <div class="text-right mt-5 text-blue-600">
-            <a href="#" class="underline">Plus de détails ></a>
           </div>
         </div>
       </div>
