@@ -11,56 +11,63 @@
     <title>Kisal - Protégeons-nous contre le coronavirus</title>
   </head>
   <body class="bg-gray-100">
-    <header class="py-4 text-l">
-      <nav class="container flex items-center justify-between">
-        <div>
-          <a href="">
-            <img src="/images/logo.png" alt="Kisal" class="h-12" />
-          </a>
-        </div>
-        <div>
-          <ul class="flex mx-auto">
-            <li class="mr-8">
-              <a href="#" class="text-gray-800 hover:text-black">Prévention</a>
-            </li>
-            <li class="mr-8">
-              <a href="#" class="text-gray-800 hover:text-black">Symptômes</a>
-            </li>
-            <li class="mr-8">
-              <a href="#" class="text-gray-800 hover:text-black"
-                >How it spreads</a
-              >
-            </li>
-            <li class="">
-              <a href="#" class="text-gray-800 hover:text-black">FAQ</a>
-            </li>
-          </ul>
-        </div>
-        <div>
-          <ul class="flex">
-            <!-- <li class="mr-6">
-              Urgence: <a href="#">+224 620 00 00 00</a> /
-              <a href="#">+224 622 00 00 00</a>
-            </li> -->
-            <li class="mr-6">
-              <a
-                href="#"
-                class="inline-block bg-yellow-700 px-4 py-3 text-gray-100 uppercase rounded-lg font-semibold text-sm tracking-wider shadow-xl hover:bg-yellow-600"
-              >
-                Faire un test
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                class="inline-block bg-red-700 px-4 py-3 text-gray-100 uppercase rounded-lg font-semibold text-sm tracking-wider shadow-xl hover:bg-red-600"
-              >
-                Urgence
-              </a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+    <header class="bg-gray-800 md:bg-transparent">
+      <div class="container md:flex items-center justify-between">
+        <nav class="flex items-center justify-between py-4">
+          <div>
+            <a href="">
+              <img src="/images/logo.png" alt="Kisal" class="h-12" />
+            </a>
+          </div>
+          <div class="md:hidden">
+            <a
+              href="#"
+              class="inline-block bg-red-700 px-4 py-3 text-gray-100 uppercase rounded-lg font-semibold text-sm tracking-wider hover:bg-red-600"
+            >
+              Urgence
+            </a>
+          </div>
+          <div class="md:hidden">
+            <a href="" id="toggleMenu">
+              <img src="/images/menu.svg" alt="Menu" class="h-10" />
+            </a>
+          </div>
+        </nav>
+
+        <ul class="pt-2 pb-5 hidden md:flex md:p-0" id="menu">
+          <li>
+            <a href="#" class="text-gray-300 md:text-gray-800">Prévention</a>
+          </li>
+          <li class="mt-3 md:mt-0 md:ml-6">
+            <a href="#" class="text-gray-300 md:text-gray-800">Symptômes</a>
+          </li>
+          <li class="mt-3 md:mt-0 md:ml-6">
+            <a href="#" class="text-gray-300 md:text-gray-800">Contagion</a>
+          </li>
+          <li class="mt-3 md:mt-0 md:ml-6">
+            <a href="#" class="text-gray-300 md:text-gray-800">FAQ</a>
+          </li>
+        </ul>
+
+        <ul class="md:flex hidden md:block">
+          <li class="">
+            <a
+              href="#"
+              class="inline-block text-center bg-yellow-700 px-4 py-3 text-gray-100 uppercase rounded-lg font-semibold text-sm tracking-wider shadow-xl hover:bg-yellow-600"
+            >
+              Faire un test
+            </a>
+          </li>
+          <li class="md:ml-6">
+            <a
+              href="#"
+              class="inline-block bg-red-700 px-4 py-3 text-gray-100 uppercase rounded-lg font-semibold text-sm tracking-wider shadow-xl hover:bg-red-600"
+            >
+              Urgence
+            </a>
+          </li>
+        </ul>
+      </div>
     </header>
 
     <!-- Hero section -->
@@ -114,8 +121,8 @@
 
     <!-- Stats section -->
     <section class="py-16">
-      <div class="container flex items-center">
-        <div class="w-1/2 bg-white rounded-lg shadow-xl p-8 mx-2">
+      <div class="container flex flex-wrap items-center">
+        <div class="w-full md:w-1/2 bg-white rounded-lg shadow-xl p-8 mx-2">
           <h2 class="text-2xl font-bold uppercase tracking-wide">Guinée</h2>
           <div class="flex mt-8">
             <div class="px-1 w-0/12">
@@ -153,7 +160,9 @@
             <a href="#" class="underline">Plus de détails ></a>
           </div>
         </div>
-        <div class="w-1/2 bg-white rounded-lg shadow-xl p-8 mx-2">
+        <div
+          class="w-full md:w-1/2 bg-white rounded-lg shadow-xl p-8 mx-2 mt-8"
+        >
           <h2 class="text-2xl font-bold uppercase tracking-wide">Worldwide</h2>
           <div class="flex mt-8">
             <div class="px-1 w-3/12">
@@ -193,5 +202,21 @@
         </div>
       </div>
     </section>
+
+    <script>
+      document.getElementById('toggleMenu').onclick = event => {
+        event.preventDefault()
+
+        const menu = document.getElementById('menu')
+
+        if (menu.classList.contains('hidden')) {
+          menu.classList.toggle('hidden', false)
+          menu.classList.toggle('block', true)
+        } else {
+          menu.classList.toggle('hidden', true)
+          menu.classList.toggle('block', false)
+        }
+      }
+    </script>
   </body>
 </html>
